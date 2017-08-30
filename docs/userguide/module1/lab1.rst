@@ -24,11 +24,7 @@ Pre-built Lab Environment
 If you are using a pre-built lab environment please assume the following:
 
 - Base Networking is configured
-- BIG-IP Devices Licensed/Activated
-- BIG-IP Active/Standy Cluster with Auto-sync
-
-  - **BIGIP_A is the Active Device**
-  - Cluster is synced
+- BIG-IP Device is Licensed/Activated
 
 - All actions will be performed on BIGIP_A
 - All configured virtual servers are accessible by IP from your jump host
@@ -60,26 +56,16 @@ If you are using a pre-built lab environment please assume the following:
       - IP's
       - Credentials
     * - BIG-IP A
-      - - Management: 10.1.1.1
-        - Internal: 10.1.10.1/24
-        - Internal (Float): 10.1.10.3/24
-        - External: 10.1.20.1/24
+      - - Management: 10.1.1.5
+        - Internal: 10.1.10.8/24
+        - External: 10.1.20.8/24
       - - admin/admin
-        - root/default
-    * - BIG-IP B
-      - - Management: 10.1.1.2
-        - Internal: 10.1.10.2/24
-        - Internal (Float): 10.1.10.3/24
-        - External: 10.1.20.2/24
-      - - admin/admin
-        - root/default
     * - Windows Jump Host
       - - Management: 10.1.1.4
         - External: 10.1.20.250/24
       - - user/user
     * - Linux Webserver
-      - - Management: 10.1.1.5
+      - - Management: 10.1.1.7
         - Internal: 10.1.10.100-103/24
         - Services: HTTP/HTTPS/SSH
-      - - user/user
-        - root/default
+      - - Auth: SSH Key Auth Only

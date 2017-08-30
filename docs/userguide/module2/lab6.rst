@@ -165,11 +165,11 @@ substitution functionality described in :ref:`policies_url` is also available.
         * - Field Name
           - Value
         * - :ref:`Virtual Server: Client SSL Certificate <preso-vs-ProfileClientSSLCert>`
-          - url=https://10.1.1.5/appsvcs/default.crt
+          - url=https://10.1.1.7/appsvcs/default.crt
         * - :ref:`Virtual Server: Client SSL Key <preso-vs-ProfileClientSSLKey>`
-          - url=https://10.1.1.5/appsvcs/default.key
+          - url=https://10.1.1.7/appsvcs/default.key
         * - :ref:`Virtual Server: Client SSL Certificate Chain <preso-vs-ProfileClientSSLChain>`
-          - url=https://10.1.1.5/appsvcs/bundle.crt
+          - url=https://10.1.1.7/appsvcs/bundle.crt
 
 #. Review the deployed config and deployment log
     - Notice that the previously deployed resources have been replaced by ones
